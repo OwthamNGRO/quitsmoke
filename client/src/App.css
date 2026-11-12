@@ -1,0 +1,135 @@
+.store {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 64px 32px 80px;
+}
+
+.store-header {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: #43735e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.store-header h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.intro {
+  margin-top: 18px;
+  color: #5e6b64;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 24px;
+}
+
+.catalog-message {
+  grid-column: 1 / -1;
+  padding: 32px;
+  border: 1px solid #dfe8e2;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+}
+
+.product-card {
+  overflow: hidden;
+  border: 1px solid #dfe8e2;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(34 65 48 / 6%);
+}
+
+.product-image {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  background: linear-gradient(135deg, #eaf3ed, #f8f4e9);
+  color: #64746a;
+  font-size: 0.9rem;
+}
+
+.product-details {
+  padding: 22px;
+}
+
+.product-details h2 {
+  min-height: 2.8em;
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.product-price {
+  margin: 14px 0 20px;
+  color: #365d49;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.order-button {
+  width: 100%;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #35684e;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+}
+
+.order-button:hover:not(:disabled) {
+  background: #28523d;
+}
+
+.order-button:focus-visible {
+  outline: 3px solid #87b49a;
+  outline-offset: 3px;
+}
+
+.order-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.feedback {
+  margin: 0 auto 24px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feedback--success {
+  background: #e8f4ec;
+  color: #28523d;
+}
+
+.feedback--error {
+  background: #fff0ed;
+  color: #9c3025;
+}
+
+@media (max-width: 600px) {
+  .store {
+    padding: 44px 20px 56px;
+  }
+
+  .store-header {
+    margin-bottom: 32px;
+  }
+}
